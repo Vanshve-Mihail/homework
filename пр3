@@ -1,0 +1,98 @@
+'''print('Задача 1')
+a = int(input())
+b = int(input())
+c = int(input())
+print(a+b+c)'''
+
+'''print('Задача 2')
+a = int(input())
+b = int(input())
+print(0.5 * a * b)'''
+
+'''print('Задача 3')
+n = int(input())
+if n <1440:
+    a=n//60
+    b=n%60
+    print(a,b)
+else:
+    while n>1440:
+        n=n-1440
+    d=n//60
+    c=n%60
+    print(d,c)'''
+
+
+'''print('Задача 4')
+a = int(input())
+b = int(input())
+l = int(input())
+N = int(input())
+print(2*l + a + (2*b + 2*a)*(N-1))'''
+
+'''print('Задача 4 функция')
+a = int(input())
+b = int(input())
+l = int(input())
+N = int(input())
+def f(a,b,l,N):   
+    return (2*l + a + (2*b + 2*a)*(N-1))
+print(f(a,b,l,N))'''
+
+'''print('Задача 5')
+a = int(input())
+b = int(input())
+c = int(input())
+def f(a,b,c):
+    return min(a,b,c)
+print(f(a,b,c))'''
+
+'''print('Задача 6')
+x1 = int(input())
+y1 = int(input())
+x2 = int(input())
+y2 = int(input())
+a1 = ''
+a2 = ''
+if (x1-1)%2==0 and y1%2==0:
+    a1 = 'черная'
+else:
+    a1 = 'белая'
+if (x2-1)%2==0 and y2%2==0:
+    a2 = 'черная'
+else:
+    a2 = 'белая'
+if a1 == a2:
+    print('да')
+else:
+    print('нет')'''
+
+'''print('Задача 7')
+s = int(input())
+if (s%4==0 and s%100!=0) or s%400==0:
+    print('да')
+else:
+    print('нет')'''
+
+'''print('Задача 8')
+a = int(input())
+b = int(input())
+c = int(input())
+k = 0
+if a==b and b==c and a==c:
+    k=3
+else:
+    if a==b or a==c or c==b:
+        k=2
+    else:
+        k=0
+print(k)'''
+
+'''print('Задача 9')
+n = int(input())
+m = int(input())
+k = int(input())
+if k < n * m and ((k % n == 0) or (k % m == 0)):
+    print('нет')
+else:
+    print('да')'''
