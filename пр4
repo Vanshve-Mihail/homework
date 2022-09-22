@@ -1,0 +1,75 @@
+'''print('������ 1')
+A = int(input())
+B = int(input())
+if A <= B:
+    for i in range(A,B+1):
+        print(i, end=", ")
+else:
+    print('������')'''
+
+'''print('������ 2')
+A = int(input())
+B = int(input())
+if A < B:
+    for i in range(A,B+1):
+        print(i,end=", ")
+else:
+    for i in range(A,B-1,-1):
+        print(i,end=", ")'''
+
+'''print('������ 3')
+A = int(input())
+B = int(input())
+if A>B:
+    for i in range(A,B-1,-1):
+        if i%2!=0:
+            print(i,end=", ")
+else:
+    print('������')'''
+
+'''print('������ 4')
+for i in range(int(input())):
+    N = int(input())
+print('...')'''
+
+'''print('������ 5')
+n = int(input())
+sum = 0
+for i in range(0,n+1):
+    sum = sum + i**3
+print(sum)'''
+
+'''print('������ 6')
+n = int(input())
+s = 1
+for i in range(1,n+1):
+    s = s*i
+print(s)'''
+
+'''print('������ 7')
+n = int(input())
+s1 = 1
+s2 = 1
+for i in range(2,n+1):
+    s1 = s1 * i
+    s2 +=s1
+print(s2)'''
+
+'''print('������ 8')
+n = int(input())
+if n<9:
+    for i in range(1,n+1):
+        for s in range(1,i+1):
+            print(s,end=" ")
+        print()
+else:
+    print('������')'''
+
+'''print('������ 9')
+a = 1
+b = 1
+n = int(input())
+for i in range(2,n):
+    a,b = b,a+b
+print(b)'''
+    
