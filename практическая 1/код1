@@ -1,0 +1,45 @@
+'''print("Задача 1")
+print('Курс Основы программирования начался')'''
+
+'''print('Задача 2')
+print((16823*12302)%3092)'''
+
+'''print('Задача 3')
+age=int(input())
+name=input()
+if name!='Иван':
+    if age>0 and age<75:
+        if age>=16:
+            print('Поздравляем вы поступили в ВГУИТ')
+        else:
+            print('Сначала нужно окончить школу!')
+            print('Сколько лет осталось учиться?')
+else:
+    print('Сколько лет осталось учиться?')'''
+
+'''print('Задача 4')
+second=int(input())
+print('дни -',second/(60*60*24))
+print('часы -',second/(60*60))
+print('минуты -',second/(60))
+print('секунды -',second)'''
+
+'''print('Задача 5')
+print('введите n')
+n=int(input())
+print(n + n**2 + n**3 + n**4 + n**5)'''
+
+'''print('Задача 6')
+x=int(input())
+y=int(input())
+a=x
+x=y
+y=a
+print(x,y)'''
+
+'''print('Задача 7')
+number=int(input())
+if number%2==0:
+    print('Число четное')
+else:
+    print('Число нечетное')'''
