@@ -1,0 +1,4 @@
+print('Задача 4')
+for i in range(int(input())):
+    N = int(input())
+print('...')
