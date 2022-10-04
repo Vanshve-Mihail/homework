@@ -13,16 +13,25 @@ if name!='Иван':
             print('Поздравляем вы поступили в ВГУИТ')
         else:
             print('Сначала нужно окончить школу!')
-            print('Сколько лет осталось учиться?')
+            if (18-age) <5:
+                print('Осталось учиться',18-age,'года')
+            else:
+                print('Осталось учиться',18-age,'лет')
 else:
     print('Сколько лет осталось учиться?')'''
 
 '''print('Задача 4')
-second=int(input())
-print('дни -',second/(60*60*24))
-print('часы -',second/(60*60))
-print('минуты -',second/(60))
-print('секунды -',second)'''
+s=int(input())
+day = 0
+hour = 0
+minn = 0
+sec = 0
+day = s//86000
+hour = (s - day*(60*60*24) )//3600
+minn = (s -day*(60*60*24) - hour*(3600))//60
+sec = (s - day*(60*60*24) - hour*3600 - minn*60)
+print(day,':',hour,':',minn,':',sec)'''  
+    
 
 '''print('Задача 5')
 print('введите n')
