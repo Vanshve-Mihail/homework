@@ -1,0 +1,12 @@
+print('задача 2')
+def s(x,y):
+    s = (x*y)/2
+    return s
+A = []
+for i in range(3):
+    print('введите стороны',i+1,'-го трейгольника:')
+    a = int(input('a:'))
+    b = int(input('b:'))
+    A.append(s(a,b))
+for i in range(3):
+    print('площадь ',i+1,'-го треугольника',A[i])
