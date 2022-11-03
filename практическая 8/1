@@ -1,0 +1,7 @@
+print('Задача 1')
+import math 
+def s(x):
+    s = (a**2 * math.sqrt(3))/4
+    return s
+a = int(input('введите значение стороны a: '))
+print(s(a)*6)
