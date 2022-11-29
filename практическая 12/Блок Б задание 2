@@ -1,0 +1,17 @@
+a = int(input())
+def f(x):
+    s = []
+    s.append(a)
+    while str(a) != '0':
+        b = int(input())
+        if str(b) != '0':
+            s.append(a)
+            s.append(b)
+            f = min(s)
+            maxx = max(s)
+            for i in range(len(s)):
+                if s[i] > f and s[i] < maxx:
+                    f = s[i]
+        else:
+            print(f)
+print(f(a))
