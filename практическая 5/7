@@ -1,10 +1,12 @@
 print('Задача 7')
-a = int(input())
-s = 0
-while str(a) != '0':
-    b = int(input())
-    if str(b) != '0':
-        if b > a:
-            s+=1
-    a = b
-print(s)
+def function():
+    a = int(input())
+    s = 0
+    while str(a) != '0':
+        b = int(input())
+        if str(b) != '0':
+            if b > a:
+                s+=1
+        a = b
+    print(s)
+function()
