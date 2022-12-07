@@ -1,27 +1,29 @@
 print('задача 1')
-N = int(input())
-A = []
-for i in range(N):
-    B = []
+def function():
+    N = int(input())
+    A = []
     for i in range(N):
-        B.append(int(input()))
-    A.append(B)
-print('исходный массив')
-for i in range(N):
-    for x in range(N):
-        print(A[i][x],end=' ')
-    print()
-s = sum(A[0])
-k = 0
-for i in range(N):
-    if sum(A[i])==s:
-        k+=1
-k1 = 0
-for i in range(N):
-    if sum(A[:][i]) == s:
-        k1+=1
-if k == k1 == N:
-    print('да',s)
-    
-else:
-    print('нет')
+        B = []
+        for i in range(N):
+            B.append(int(input()))
+        A.append(B)
+    print('исходный массив')
+    for i in range(N):
+        for x in range(N):
+            print(A[i][x], end=' ')
+        print()
+    s = sum(A[0])
+    k = 0
+    for i in range(N):
+        if sum(A[i]) == s:
+            k += 1
+    k1 = 0
+    for i in range(N):
+        if sum(A[:][i]) == s:
+            k1 += 1
+    if k == k1 == N:
+        print('да', s)
+
+    else:
+        print('нет')
+function()
