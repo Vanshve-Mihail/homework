@@ -1,6 +1,8 @@
-s = input()
-k = 0
-while ':' in s:
-    s=s.replace(':','%',1)
-    k+=1
-print(s,k)
+def function():
+    s = input()
+    k = 0
+    while ':' in s:
+        s=s.replace(':','%',1)
+        k+=1
+    print(s,k)
+function()
