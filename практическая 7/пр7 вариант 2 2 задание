@@ -1,12 +1,14 @@
-N=int(input())
-a=[]
-for i in range(N):
-    a.append(int(input()))
-b=[]
-c=[]
-for i in a:
-    if i>0:
-        b.append(i)
-    else: 
-        c.append(i)
-print(b,c)
+def s():
+    N=int(input())
+    a=[]
+    for i in range(N):
+        a.append(int(input()))
+    b=[]
+    c=[]
+    for i in a:
+        if i>0:
+            b.append(i)
+        else:
+            c.append(i)
+    print(b,c)
+s()
