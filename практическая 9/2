@@ -1,20 +1,22 @@
 print('задача 2')
-N = int(input())
-A = []
-for i in range(N):
-    B = []
+def function():
+    N = int(input())
+    A = []
     for i in range(N):
-        B.append(int(input()))
-    A.append(B)
-print('исходный массив')
-for i in range(N):
-    for x in range(N):
-        print(A[i][x],end=' ')
-    print()
-for i in range(N):
-    A[i][0],A[i][N-1] = A[i][N-1],A[i][0]
-print('измененный массив')
-for i in range(N):
-    for x in range(N):
-        print(A[i][x],end=' ')
-    print()
+        B = []
+        for i in range(N):
+            B.append(int(input()))
+        A.append(B)
+    print('исходный массив')
+    for i in range(N):
+        for x in range(N):
+            print(A[i][x],end=' ')
+        print()
+    for i in range(N):
+        A[i][0],A[i][N-1] = A[i][N-1],A[i][0]
+    print('измененный массив')
+    for i in range(N):
+        for x in range(N):
+            print(A[i][x],end=' ')
+        print()
+function()
