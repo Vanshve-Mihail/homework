@@ -1,11 +1,13 @@
 print('Задача 6')
-a = str(input())
-s = 0
-k = 0
-b = 0
-while a != '0':
-    k += 1
-    s += int(a)
-    b = s/k
+def function():
     a = str(input())
-print(b)
+    s = 0
+    k = 0
+    b = 0
+    while a != '0':
+        k += 1
+        s += int(a)
+        b = s/k
+        a = str(input())
+    print(b)
+function()
