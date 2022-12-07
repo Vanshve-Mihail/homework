@@ -1,5 +1,7 @@
 print('Задача 5')
-s = 0
-while str(input()) != '0':
-    s +=1
-print('кол-во членов последовательности',s)
+def function():
+    s = 0
+    while str(input()) != '0':
+        s +=1
+    print('кол-во членов последовательности',s)
+function()
