@@ -1,8 +1,10 @@
 print('Задача 1')
-A = int(input())
-B = int(input())
-if A <= B:
-    for i in range(A,B+1):
-        print(i, end=", ")
-else:
-    print('ошибка')
+def function():
+    A = int(input())
+    B = int(input())
+    if A <= B:
+        for i in range(A,B+1):
+            print(i, end=", ")
+    else:
+        print('ошибка')
+function()
