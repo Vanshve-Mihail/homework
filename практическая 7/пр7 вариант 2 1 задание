@@ -1,11 +1,13 @@
-N=int(input())
-a=[]
-for i in range(N):
-    a.append(int(input()))
-m=10**10
-c=0
-for i in range(N):
-    if a[i]<m:
-        m=a[i]
-        c=i
-print(m,c)
+def function():
+    N=int(input())
+    a=[]
+    for i in range(N):
+        a.append(int(input()))
+    m=10**10
+    c=0
+    for i in range(N):
+        if a[i]<m:
+            m=a[i]
+            c=i
+    print(m,c)
+function()
