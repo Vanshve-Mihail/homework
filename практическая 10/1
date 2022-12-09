@@ -1,23 +1,25 @@
 print('задача 1')
-file1 = open('C:/Users/vansh/Desktop/Ваньшев М.Е._У-223_vvod1.txt','r')
-file2 = open('C:/Users/vansh/Desktop/Ваньшев М.Е._У-223_vivod1.txt','w+')
-a = [int(x) for x in file1]
-N = a[0]
-A = [a[i:i+N] for i in range(1,len(a),N)]
-file2.write(str(A) + '\n')
-s = sum(A[0])
-k = 0
-for i in range(N):
-    if sum(A[i])==s:
-        k+=1
-k1 = 0
-for i in range(N):
-    if sum(A[:][i]) == s:
-        k1+=1
-if k == k1 == N:
-    file2.write('Да' + '\n')
-    file2.close()     
-else:
-    file2.write('Нет' + '\n')
-    file2.close()
-file1.close()
+def f():
+    file1 = open('C:/Users/vansh/Desktop/Ваньшев М.Е._У-223_vvod1.txt','r')
+    file2 = open('C:/Users/vansh/Desktop/Ваньшев М.Е._У-223_vivod1.txt','w+')
+    a = [int(x) for x in file1]
+    N = a[0]
+    A = [a[i:i+N] for i in range(1,len(a),N)]
+    file2.write(str(A) + '\n')
+    s = sum(A[0])
+    k = 0
+    for i in range(N):
+        if sum(A[i])==s:
+            k+=1
+    k1 = 0
+    for i in range(N):
+        if sum(A[:][i]) == s:
+            k1+=1
+    if k == k1 == N:
+        file2.write('Да' + '\n')
+        file2.close()
+    else:
+        file2.write('Нет' + '\n')
+        file2.close()
+    file1.close()
+f()
