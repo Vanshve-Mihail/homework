@@ -12,7 +12,7 @@ public class Main1 {
         String[] words = input.split("\\s+");
         StringBuilder sb = new StringBuilder();
         for (String word : words) {
-            sb.append(word.substring(1)).append(word.charAt(0)).append("Ауч ");
+            sb.append(word.substring(1)).append(word.charAt(0)).append("ауч ");
         }
 
         System.out.println(sb.toString().trim());
