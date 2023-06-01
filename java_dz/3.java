@@ -1,12 +1,37 @@
-public class dddd {
+import java.util.Scanner;
+
+public class Main1 {
     public static void main(String[] args) {
-        d[] A = {7, 1};
-        d[] B = {10, 8};
-        d[] C = {1, 10};
-        d[] D = {(B[0] + C[0]) / 2, (B[1] + C[1]) / 2};
-        d[] E = {(A[0] + C[0]) / 2, (A[1] + C[1]) / 2};
-        d[] F = {(A[0] + B[0]) / 2, (A[1] + B[1]) / 2};
-        d[] bary = {(D[0] + E[0] + F[0]) / 3, (D[1] + E[1] + F[1]) / 3};
-        System.out.printf("{%.4f, %.4f}", bary[0], bary[1]);
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Введите координаты вершин треугольника: ");
+        String verticesInput = input.nextLine();
+        double[][] vertices = new double[3][2];
+
+        verticesInput = verticesInput.replace("[", "").replace("]", "").replace(",", "");
+        String[] vertexCoords = verticesInput.split(" ");
+        for (int i = 0; i < 3; i++) {
+            vertices[i][0] = Double.parseDouble(vertexCoords[i*2]);
+            vertices[i][1] = Double.parseDouble(vertexCoords[i*2+1]);
+        }
+
+        double[][] midpoints = new double[3][2];
+        for (int i = 0; i < 3; i++) {
+            int j = (i+1) % 3;
+            midpoints[i][0] = (vertices[i][0] + vertices[j][0]) / 2;
+            midpoints[i][1] = (vertices[i][1] + vertices[j][1]) / 2;
+        }
+
+        double[] barycenter = new double[2];
+        for (int i = 0; i < 3; i++) {
+            barycenter[0] += midpoints[i][0];
+            barycenter[1] += midpoints[i][1];
+        }
+        barycenter[0] /= 3;
+        barycenter[1] /= 3;
+
+        System.out.printf("Барицентр: (%.4f, %.4f)", barycenter[0], barycenter[1]);
+
+        input.close();
     }
 }
