@@ -6,7 +6,6 @@ class Calculator {
         }
         return evaluateExpression(equation);
     }
-
     private double evaluateExpression(String expression) throws Exception {
         if (expression.contains("|")) {
             int start = expression.indexOf("|") + 1;
